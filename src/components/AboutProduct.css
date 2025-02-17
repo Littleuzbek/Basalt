@@ -1,0 +1,123 @@
+.about-product-page{
+    width: 100%;
+}
+
+.about-product-page > div{
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.general-info {
+    width: 39%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.general-info > h1 {
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.general-info > p {
+    font-size: 17px;
+}
+
+
+.consulting {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.consulting > h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.consulting > a {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+    cursor: unset;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+.consulting > a:hover {
+    background-color: var(--orange);
+    color: white;
+    border: 2px solid var(--orange);
+    transition: .5s;
+}
+
+.catalog{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid black;
+}
+
+.catalog > button{
+    height: 99%;
+    padding: 0 25px;
+    cursor: unset;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.catalog > button.active {
+    background-color: var(--orange);
+}
+
+.about-product-page > div:nth-child(2){
+    flex-direction: column;
+}
+
+.full-info{
+    width: 100%;
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.full-info > h1{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.full-info > div > h3{
+    font-weight: 600;
+}
+
+.full-info > div > ol{
+    margin: 10px 0 0;
+    padding: 0 17px;
+}
+
+.list {
+    width: 100%;
+}
+
+.list > h3{
+    font-weight: 600;
+}
+
+.list > ul {
+    margin: 10px 17px 20px;
+}
+
+.list > ul > li {
+    line-height: 1.7;
+}

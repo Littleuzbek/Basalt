@@ -1,0 +1,156 @@
+.projects-page {
+  width: 100%;
+}
+
+.projects-page > div {
+  width: 75%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+
+.project-cardd {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+.project-cardd > img {
+  width: 100%;
+}
+
+.project-cardd > div {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+  transition: 0.3s;
+}
+
+.project-cardd > div > p {
+  padding: 20px 20px 0;
+  text-wrap: wrap;
+  font-size: 14px;
+}
+
+.project-cardd > div > h4 {
+  padding: 20px 20px 0;
+  text-wrap: wrap;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.1s;
+}
+
+.project-slider > h4 {
+  font-size: 22px !important;
+}
+
+.project-slider > div > h4 {
+  padding: 25px 20px 0;
+}
+
+.solution-slider-card > div > h4 {
+  padding: 12px 20px 0 !important;
+}
+
+.solution-card > div > h4 {
+  padding: 10px 20px 0 !important;
+}
+
+#solution-slider-card:hover > div,
+.solution-card:nth-child(4):hover > div,
+.solution-card:nth-child(6):hover > div {
+  animation: none;
+  transform: translateY(-74%);
+  position: absolute;
+}
+
+#solution-slider-card > img,
+.solution-card:nth-child(4) > img,
+.solution-card:nth-child(6) > img {
+  height: 255px;
+}
+
+.moreBtn {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+
+.moreBtn > button {
+  width: 100%;
+  height: 100%;
+  background-color: #909090;
+  color: black;
+  font-weight: 500;
+  font-size: 17px;
+  border: none;
+  cursor: unset;
+}
+
+.moreBtn > button::before {
+  content: "Подробнее";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 50px 0;
+  background-color: var(--orange);
+  color: white;
+  transform: translateX(-90%);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.moreBtn > button:hover::before {
+  border-radius: 0;
+  transform: translateX(0);
+}
+
+.project-cardd:hover > div {
+  animation: fadeInUp 0.3s linear forwards;
+}
+
+.project-slider:hover > div {
+  animation: fadeInUpSlider 0.3s linear forwards !important;
+}
+
+#slider-sm{
+  display: none !important;
+}
+
+@keyframes fadeInUp {
+  to {
+    position: absolute;
+    transform: translateY(-79%);
+  }
+}
+
+@keyframes fadeInUpSlider {
+  to {
+    position: absolute;
+    transform: translateY(-78.5%);
+  }
+}
+
+@keyframes fillIn {
+  from {
+    width: 0%;
+    display: none;
+  }
+  to {
+    display: flex;
+    width: 100%;
+  }
+}
