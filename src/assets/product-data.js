@@ -178,7 +178,7 @@ import basfiber34 from "./basaltBasfiber/basfiber34.jpg"
 import basfiber35 from "./basaltBasfiber/basfiber35.jpg"
 import basfiber36 from "./basaltBasfiber/basfiber36.jpg"
 import basfiber37 from "./basaltBasfiber/basfiber37.jpg"
-// import basfiberVid from "./basaltBasfiber/basfiberVid.mp4"
+import basfiberVid from "./basaltBasfiber/basfiberVid.mp4"
 
 export const basalt_ecobasalt = {
     images: [ecobasalt1, ecobasalt2, ecobasalt3, ecobasalt4, ecobasalt5, ecobasalt6],
