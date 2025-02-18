@@ -6,13 +6,14 @@ import { GrFormPrevious } from "react-icons/gr";
 
 export default function ProjectSlider() {
   let sliderRef = useRef(null);
+  const navigate = useNavigate();
+
   const next = () => {
     sliderRef.slickNext();
   };
   const previous = () => {
     sliderRef.slickPrev();
   };
-  const navigate = useNavigate();
 
   const settings = {
     focusOnSelect: true,
@@ -67,7 +68,7 @@ export default function ProjectSlider() {
                   chopped strand and basalt reinforcement bars
                 </p>
                 <div className="moreBtn">
-                  <button>Подробнее</button>
+                  <button onClick={() => navigate("/projects/rockfiber")}>Подробнее</button>
                 </div>
               </div>
             </div>
@@ -81,7 +82,7 @@ export default function ProjectSlider() {
                 <h4>GEOBASALT PRODUCTS</h4>
                 <p>Production of basalt geogrid and facade mesh</p>
                 <div className="moreBtn">
-                  <button>Подробнее</button>
+                  <button onClick={() => navigate("/projects/geobasalt-products")}>Подробнее</button>
                 </div>
               </div>
             </div>
@@ -95,7 +96,7 @@ export default function ProjectSlider() {
                 <h4>ECOBASALT GROUP</h4>
                 <p>Production of continuous BRP pipes</p>
                 <div className="moreBtn">
-                  <button>Подробнее</button>
+                  <button onClick={() => navigate("/projects/ecobasalt-group")}>Подробнее</button>
                 </div>
               </div>
             </div>
@@ -112,7 +113,7 @@ export default function ProjectSlider() {
                   roving) and basalt chopped strand
                 </p>
                 <div className="moreBtn">
-                  <button>Подробнее</button>
+                  <button onClick={() => navigate("/projects/goldfiber-pro")}>Подробнее</button>
                 </div>
               </div>
             </div>
@@ -126,7 +127,7 @@ export default function ProjectSlider() {
                 <h4>BASALT WOOL</h4>
                 <p>Production of basalt rockwool and insulation materials</p>
                 <div className="moreBtn">
-                  <button>Подробнее</button>
+                  <button onClick={() => navigate("/projects/basalt-wool")}>Подробнее</button>
                 </div>
               </div>
             </div>
@@ -143,7 +144,7 @@ export default function ProjectSlider() {
                   roving) and basalt fabric
                 </p>
                 <div className="moreBtn">
-                  <button>Подробнее</button>
+                  <button onClick={() => navigate("/projects/basfiber-trade")}>Подробнее</button>
                 </div>
               </div>
             </div>
@@ -159,7 +160,7 @@ export default function ProjectSlider() {
                 </h4>
                 <p>Production of basalt rockwool and insulation materials</p>
                 <div className="moreBtn">
-                  <button>Подробнее</button>
+                  <button onClick={() => navigate("/projects/qoraqalpoq-basalt-wool")}>Подробнее</button>
                 </div>
               </div>
             </div>
@@ -175,7 +176,7 @@ export default function ProjectSlider() {
                 <div className="moreBtn">
                   <button
                     onClick={() =>
-                      navigate("/projects/production-of-basalt-quarry")
+                      navigate("/projects/basalt-quarry")
                     }
                   >
                     Подробнее
