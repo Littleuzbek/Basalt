@@ -63,17 +63,41 @@ export default function RootLayout() {
             <li>
               <NavLink to="/projects">Projects</NavLink>
               <div className="navigation-drop">
-                <Link to="/projects/rockfiber">Rokfiber</Link>
-                <Link to="/projects/geobasalt-products">GEOBASALT PRODUCTS</Link>
+                <Link to="/projects/rockfiber"
+                  onClick={() => navigationHandler()}
+                >
+                  Rokfiber
+                </Link>
+                <Link to="/projects/geobasalt-products"
+                  onClick={() => navigationHandler()}
+                >
+                  GEOBASALT PRODUCTS
+                </Link>
                 <Link to="/projects/ecobasalt-group"
                   onClick={() => navigationHandler()}
                 >
                   ECOBASALT GROUP
                 </Link>
-                <Link to="/projects/goldfiber-pro">GOLDFIBER PRO</Link>
-                <Link to="/projects/basalt-wool">BASALT WOOL</Link>
-                <Link to="/projects/basfiber-trade">BASFIBER TRADE</Link>
-                <Link to="/projects/qoraqalpoq-basalt-wool">QORAQALPOQ BASALTWOOL</Link>
+                <Link to="/projects/goldfiber-pro"
+                  onClick={() => navigationHandler()}
+                >
+                  GOLDFIBER PRO
+                </Link>
+                <Link to="/projects/basalt-wool"
+                  onClick={() => navigationHandler()}
+                >
+                  BASALT WOOL
+                </Link>
+                <Link to="/projects/basfiber-trade"
+                  onClick={() => navigationHandler()}
+                >
+                  BASFIBER TRADE
+                </Link>
+                <Link to="/projects/qoraqalpoq-basalt-wool"
+                  onClick={() => navigationHandler()}
+                >
+                  QORAQALPOQ BASALTWOOL
+                </Link>
                 <Link
                   to="/projects/basalt-quarry"
                   onClick={() => navigationHandler()}
