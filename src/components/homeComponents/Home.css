@@ -321,10 +321,16 @@
 
 .team {
     width: 100%;
-    background-size: cover;
     padding: 50px 0;
     position: relative;
-    background-attachment: fixed;
+}
+
+.team > h2 {
+    color: black;
+}
+
+.team > span {
+    background-color: black;
 }
 
 .team > div {
