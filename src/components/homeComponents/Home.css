@@ -246,7 +246,7 @@
     height: 100%;
     object-fit: contain;
     user-select: none;
-    -webkit-user-drag: none;
+    -webkit-user-drag: none !important;
 }
 
 .testimonial > .action-container{
@@ -321,22 +321,11 @@
 
 .team {
     width: 100%;
-    height: 600px;
     background-size: cover;
     padding: 50px 0;
     position: relative;
     background-attachment: fixed;
 }
-
-/* .team::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .5);
-} */
 
 .team > div {
     width: 75%;
@@ -345,73 +334,10 @@
     margin: 50px auto;
 }
 
-.team-card {
-    width: 23%;
-    background-color: var(--grayish);
-    text-align: center;
-}
-
-.team-card > div:nth-child(2) {
-    padding: 20px 0;
-}
-
-.team-card > div > h4 {
+.team > div > video {
     width: 100%;
-    font-size: 20px;
-    color: var(--orange);
-    margin: 0 0 5px;
-}
-
-.team-card > div > p {
-    width: 100%;
-    font-size: 15px;
-    color: white;
-}
-
-.team-card:hover {
-    background-color: var(--orange);
-    transition: .3s;
-}
-
-.team-card:hover div > h4  {
-    color: white;
-}
-
-.team-card > div:nth-child(1) {
-    position: relative;
-}
-
-.link-tree{
-    position: absolute;
-    bottom: 20px;
-    left: 25%;
-    right: 25%;
-    display: none;
-    justify-content: space-between;
-    animation: Up .3s ease-in-out;
-}
-
-.link-tree > svg{
-    width: 20px;
-    height: 20px;
-    color: white;
-    /* cursor: pointer; */
-}
-
-.team-card:hover > div:nth-child(1) > .link-tree {
-    display: flex;
-}
-
-.team-card > div:nth-child(1)::before {
-    content: "";
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    height: 400px;
+    object-fit: cover;
 }
 
 .latest-news-container{
