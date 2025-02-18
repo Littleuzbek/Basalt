@@ -153,9 +153,11 @@ body {
   user-select: none;
 }
 
+.header-background > video,
 .header-background > img{
   width: 100%;
   height: 285px;
+  object-fit: cover;
   -webkit-user-drag: none;
 }
 
@@ -170,7 +172,7 @@ body {
   top: 0;
   bottom: 0;
   font-size: 36px;
-  background: rgba(39,39,39,0.1);
+  background: rgba(39,39,39,0.3);
   text-transform: none;
 }
 

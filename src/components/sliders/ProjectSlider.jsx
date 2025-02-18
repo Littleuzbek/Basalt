@@ -3,6 +3,14 @@ import Slider from "react-slick";
 import { useRef } from "react";
 import { useNavigate } from "react-router";
 import { GrFormPrevious } from "react-icons/gr";
+import fiber from "../../assets/basaltRockfiber/fiber1.jpg"
+import geobasalt from "../../assets/basaltGeogrid/geogrid2.jpg"
+import ecobasalt from "../../assets/basaltPipe/pipe4.jpg"
+import goldfiber from "../../assets/basaltGoldfiber/GOLDFIBER-37.jpg"
+import wool from "../../assets/basaltWool/wool3.jpg"
+import trade from "../../assets/basaltBasfiber/basfiber32.jpg"
+import qqwool from "../../assets/basaltQWool/qqWool1.jpg"
+import quarry from "../../assets/basaltQuarry/quarry5.jpg"
 
 export default function ProjectSlider() {
   let sliderRef = useRef(null);
@@ -58,7 +66,7 @@ export default function ProjectSlider() {
             <div className="project-cardd project-slider">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/mashina-dlya-blokov-fbs-steif-mfs-2.jpg"
+                src={fiber}
                 alt=""
               />
               <div>
@@ -75,7 +83,7 @@ export default function ProjectSlider() {
             <div className="project-cardd project-slider">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/mashina-dlya-blokov-fbs-steif-mfs-2.jpg"
+                src={geobasalt}
                 alt=""
               />
               <div>
@@ -89,7 +97,7 @@ export default function ProjectSlider() {
             <div className="project-cardd project-slider">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/mashina-dlya-blokov-fbs-steif-mfs-2.jpg"
+                src={ecobasalt}
                 alt=""
               />
               <div>
@@ -103,7 +111,7 @@ export default function ProjectSlider() {
             <div className="project-cardd project-slider">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/mashina-dlya-blokov-fbs-steif-mfs-2.jpg"
+                src={goldfiber}
                 alt=""
               />
               <div>
@@ -120,7 +128,7 @@ export default function ProjectSlider() {
             <div className="project-cardd project-slider">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/mashina-dlya-blokov-fbs-steif-mfs-2.jpg"
+                src={wool}
                 alt=""
               />
               <div>
@@ -134,7 +142,7 @@ export default function ProjectSlider() {
             <div className="project-cardd project-slider">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/mashina-dlya-blokov-fbs-steif-mfs-2.jpg"
+                src={trade}
                 alt=""
               />
               <div>
@@ -151,7 +159,7 @@ export default function ProjectSlider() {
             <div className="project-cardd project-slider">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/mashina-dlya-blokov-fbs-steif-mfs-2.jpg"
+                src={qqwool}
                 alt=""
               />
               <div>
@@ -167,7 +175,7 @@ export default function ProjectSlider() {
             <div className="project-cardd">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/mashina-dlya-blokov-fbs-steif-mfs-2.jpg"
+                src={quarry}
                 alt=""
               />
               <div>

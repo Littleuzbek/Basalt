@@ -2,6 +2,9 @@ import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import entrance from "../assets/entrance1.jpg";
+import projBack from "../assets/projectPageBack.mp4"
+import solutionBack from "../assets/solutionPageBack.mp4"
+import aboutBack from "../assets/aboutBack.mp4"
 // import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
 import { LuMenu } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
@@ -199,7 +202,10 @@ export default function RootLayout() {
 
         </div>
         <span className="header-background">
-          <img src={entrance} alt="" onClick={() => navigate("/")} />
+          {(link.pathname.includes("/projects") || link.pathname.includes("/solutions") || link.pathname.includes("/about-us")) || <img src={entrance} alt="" onClick={() => navigate("/")} />}
+          {link.pathname.includes("/projects") && <video src={projBack} autoPlay loop muted preload="auto" playsInline></video>}
+          {link.pathname.includes("/solutions") && <video src={solutionBack} autoPlay loop muted preload="auto" playsInline></video>}
+          {link.pathname.includes("/about-us") && <video src={aboutBack} autoPlay loop muted preload="auto" playsInline style={{objectPosition: "center 40%"}}></video>}
           <div>
             <h1 style={{ textTransform: "capitalize" }}>
               {link?.pathname?.split("/")?.[1]}
