@@ -28,9 +28,20 @@ export default function EndProductSlider() {
     if (!isDragging) return;
     e.preventDefault();
 
+    // const x = e.pageX - slidesRef.current.offsetLeft;
+    // const walk = (x - startX) * 2;
+    // slidesRef.current.scrollLeft = scrollLeft - walk;
     const x = e.pageX - slidesRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    slidesRef.current.scrollLeft = scrollLeft - walk;
+    const moveDistance = x - startX; 
+
+    if (Math.abs(moveDistance) > 50) { 
+      if (moveDistance > 0) {
+        slidesRef.current.scrollLeft -= 270; 
+      } else {
+        slidesRef.current.scrollLeft += 270; 
+      }
+      setIsDragging(false); 
+    }
   };
 
   const handleMouseUp = () => {
