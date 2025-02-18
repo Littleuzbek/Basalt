@@ -183,6 +183,7 @@
 
 .testimonial{
     width: 45%;
+    position: relative;
 }
 
 .FAQ {
@@ -216,49 +217,51 @@
     right: 0;
 }
 
-.testimonial > div {
+.end-product-slider {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 40px 0;
+    overflow: hidden;
+}
+
+.end-product-slider > div {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    gap: 20px;
+    transition: all .3s linear;
+    overflow: hidden;
+    user-select: none;
+}
+
+.end-product-slider > div::-webkit-scrollbar {
+    display: none;
+}
+
+.end-product-slider > div > img{
+    min-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.testimonial > .action-container{
+    top: 50%;
+}
+
+.testimonial > .action-container > svg:nth-child(1){
+    left: 0;
+}
+
+.testimonial > .action-container > svg:nth-child(2){
+    right: 0;
 }
 
 .quote-icon {
     width: 35px;
     height: 35px;
-}
-
-.testimonial > p {
-    line-height: 1.6;
-}
-
-.author > div:nth-child(1) {
-    display: flex;
-    gap: 20px;
-}
-
-.author > div:nth-child(1) > img {
-    padding: 0 0 4px;
-    background-color: var(--orange);
-}
-
-.author > div:nth-child(1) > div {
-    align-self: flex-end;
-}
-
-.author > div:nth-child(1) > div > p {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--orange)
-}
-
-.author > div:nth-child(2) {
-    display: flex;
-    align-items: flex-end;
-}
-
-.author > div:nth-child(2) > svg {
-    color: var(--orange);
 }
 
 .FAQ > div {

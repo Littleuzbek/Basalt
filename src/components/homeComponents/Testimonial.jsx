@@ -1,8 +1,8 @@
-import author_pic from "../../assets/author.jpg"
-import { FaMinus } from "react-icons/fa6";
-import { CiCircleChevRight, CiCircleChevLeft } from "react-icons/ci";
-import { FaStar, FaRegStar, FaQuoteLeft, FaPlus } from "react-icons/fa";
 import { useState } from "react";
+import { FaMinus } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa";
+
+import EndProductSlider from "../sliders/EndProductSlider";
 
 export default function Testimonial() {
   const [offer, setOffer] = useState(1);
@@ -14,41 +14,15 @@ export default function Testimonial() {
       setOffer(order)
     }
   }
+
   return (
     <div className="testimonial-contatiner">
       <div>
       <div className="testimonial" data-aos="fade-right" data-aos-duration="2000">
-          <h2>Testimonial</h2>
+          <h2>SOLUTIONS <br /> END PRODUCTS</h2>
           <span></span>
 
-          <div>
-           <FaQuoteLeft className="quote-icon" style={{color: "var(--orange)"}}/> 
-           <span>
-            <CiCircleChevLeft  className="quote-icon"/>
-            <CiCircleChevRight className="quote-icon"/>
-           </span>
-          </div>
-
-          <p>
-            I'm using build cost control for either its house building project or big construction project and it derives me a growing business of mine. The results came out as we wanted it to be.
-          </p>
-
-          <div className="author">
-            <div>
-              <img src={author_pic} loading="lazy" alt="" />
-              <div>
-                <h4>Marcus Finn</h4>
-                <p>CEO, Axura</p>
-              </div>
-            </div>
-            <div>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaRegStar />
-              <FaRegStar />
-            </div>
-          </div>
+          <EndProductSlider />
         </div>
 
         <div className="FAQ" data-aos="fade-left" data-aos-duration="2000">

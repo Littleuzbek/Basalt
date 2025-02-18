@@ -685,4 +685,3 @@ export const basalt_quarry = {
         } 
     }
 }
-
