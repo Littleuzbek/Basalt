@@ -1,6 +1,6 @@
 import "../components/homeComponents/Home.css";
 import "../components/ContactUs.css";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useEffect, useRef } from "react";
 import lava2 from "../assets/lava2.mp4"
 import partner1 from "../assets/Basalt partners/7.png"
 import partner8 from "../assets/Basalt partners/8.png"
@@ -38,6 +38,7 @@ const ProjectSlider = lazy(() => import("../components/sliders/ProjectSlider"));
 const ContactUs = lazy(() => import("../components/ContactUsComp"));
 
 export default function Home() {
+  const partnerRef = useRef(null);
   return (
     <>
       <Suspense fallback="...">
@@ -79,7 +80,7 @@ export default function Home() {
       <div className="partners">
         <h2>Our Partners</h2>
         <div className="slider-partners">
-          <div>
+          <div ref={partnerRef}>
             <img src={partner1} loading="lazy" />
             <img src={partner8} loading="lazy" />
             <img src={partner9} loading="lazy" />
@@ -105,7 +106,9 @@ export default function Home() {
             <img src={partner29} loading="lazy" />
             <img src={partner30} loading="lazy" />
             <img src={NewPartner1} loading="lazy" />
-            <img src={NewPartner2} loading="lazy" />
+            <img src={NewPartner2} loading="lazy" onLoad={()=>{
+              partnerRef.current.style.setProperty("--content-width", `-${partnerRef.current.scrollWidth - partnerRef.current.offsetWidth + 100}px`)
+            }}/>
           </div>
         </div>
       </div>

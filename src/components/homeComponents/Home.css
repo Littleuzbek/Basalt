@@ -486,12 +486,15 @@
 }
 
 .slider-partners > div{
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    animation: scrolling 40s linear infinite;
     gap: 30px;
-    animation: scrolling 20s linear infinite;
     user-select: none;
+}
+
+.slider-partners > div::-webkit-scrollbar{
+    display: none;
 }
 
 .slider-partners > div > img{

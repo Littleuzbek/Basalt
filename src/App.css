@@ -3,6 +3,7 @@
 :root{
   --orange: #ffdc00;
   --grayish: rgb(49, 49, 49);
+  --content-width: 100%;
 }
 
 * {
@@ -315,10 +316,10 @@ body {
 
 @keyframes scrolling {
   from{
-    transform: translateX(1%);
+    transform: translateX(5%);
 
   }
   to{
-    transform: translateX(-100%);
+    transform: translateX(var(--content-width));
   }
 }
