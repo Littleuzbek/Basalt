@@ -28,9 +28,6 @@ export default function EndProductSlider() {
     if (!isDragging) return;
     e.preventDefault();
 
-    // const x = e.pageX - slidesRef.current.offsetLeft;
-    // const walk = (x - startX) * 2;
-    // slidesRef.current.scrollLeft = scrollLeft - walk;
     const x = e.pageX - slidesRef.current.offsetLeft;
     const moveDistance = x - startX; 
 
