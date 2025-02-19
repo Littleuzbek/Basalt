@@ -5,8 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
   import { GrFormPrevious } from "react-icons/gr";
 import { useRef } from "react";
+import { useNavigate } from "react-router";
 
 export default function SolutionSlider() {
+  const navigate = useNavigate();
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -71,7 +73,7 @@ export default function SolutionSlider() {
                   формообразователи для решеток перекрытия...
                 </p> */}
                 <div className="moreBtn">
-                  <button>Подробнее</button>
+                  <button onClick={() => navigate("/solutions/production-of-basalt-continuous-fiber")}>Подробнее</button>
                 </div>
               </div>
             </div>

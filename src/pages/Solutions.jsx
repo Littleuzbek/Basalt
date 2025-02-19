@@ -13,7 +13,7 @@ export default function Solutions() {
           <h4>Complex for the production of Basalt continuous fiber</h4>
           {/* <p>	Компания ТУЛАПРЕССМАШ производит сменные универсальные формообразователи для решеток перекрытия...</p> */}
           <div className="moreBtn">
-            <button onClick={()=> navigate("/solutions/complex-for-the-production-of-basalt-continuous-fiber")}>Подробнее</button>
+            <button onClick={()=> navigate("/solutions/production-of-basalt-continuous-fiber")}>Подробнее</button>
           </div>
         </div>
       </div>

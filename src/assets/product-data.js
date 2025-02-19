@@ -675,12 +675,57 @@ export const basalt_quarry = {
             p: null,
             listItem:  [
                 [
-                    "Lorem ipsum dolor sit amet.", 
-                    "Lorem, ipsum dolor.", 
-                    "Lorem, ipsum.", 
-                    "Lorem ipsum dolor sit amet consectetur.",
-                    "Lorem ipsum dolor sit."
+                    "Lorem ipsum dolor sit amet;", 
+                    "Lorem, ipsum dolor;", 
+                    "Lorem, ipsum dolor;", 
+                    "Lorem, ipsum dolor;", 
+                    "Lorem, ipsum dolor;", 
+                    "Lorem, ipsum dolor;", 
                 ]
+            ]
+        } 
+    }
+}
+
+
+export const solFiber = {
+    images: [quarry7, quarry2, quarry3, quarry5, quarry6, quarry1],
+    general: {
+        title: "Production of Basalt continuous fiber",
+        p: null,
+    },
+    adv: {
+        list: {
+            title: "TECHNOLOGICAL COMPLEX FOR THE PRODUCTION OF BASALT CONTINUOUS FIBER",
+            listTitle: ["Technological furnace equipment:", 
+                        "Gas-Exhaust-Air systems (GEAS):",
+                        "Complete plant automation system (PMS):",
+                        "Yet continious:"
+                       ], 
+            p: "The production complex contains different components that form units jointly working as one system. Each unit has its own designation and role in the production process. Here is brief description of the units:",
+            listItem:  [
+                [
+                    "Furnace refractory materials;", 
+                    "Furnace lining and isolation;", 
+                    "Furnace frame module and auxiliary parts;", 
+                    "Furnace burners and gas system auxiliary parts;",
+                    "Furnace thermocouples;",
+                    "Bushing alloy including jets and bushing (up to 600 nozzles) for 28 pairs;",
+                    "Bushing transformers;",
+                    "Copper busbars;",
+                    "Set of basalt fiber winders;",
+                    "Set of basalt fiber cross winderss.",
+                ],
+                [
+                    "Ventilators & Smoke exhausters;", 
+                    "Recuperators and Heat exchangers.", 
+                ],
+                [
+                    "Uninterruptible Electrical power supply unit;", 
+                    "Frequency converters;", 
+                    "Cables in assortment."
+                ],
+                ["Continious..."]
             ]
         } 
     }

@@ -1,26 +1,24 @@
-import welcomePic from "../../assets/welcome.jpg";
+import { useNavigate } from "react-router";
+import welcomePic from "../../assets/about-img.jpg";
 
 export default function Welcome() {
+  const navigate = useNavigate();
   return (
     <div className="welcome">
       <div>
         <div className="welcome-words" data-aos="fade-right" data-aos-duration="2000">
-          <h2>Welcome to</h2>
-          <h2>Industrial & Factory</h2>
+          <h2>Kindness</h2>
+          <h2>Melts Stone</h2>
 
           <p>
-            When you give to Our Industry, know your donation is making a
-            difference whether you are supporting our signature Programs
-            professional.
+            The Group of companies BASALT UZBEKISTAN was founded in 2015 in the Jizzakh region, Forish district, Republic of Uzbekistan. Location - basalt quarry "Osmonsoy". 
+          BASALT UZBEKISTAN presents a wide range of basalt materials for construction in Uzbekistan and other countries. It is one of the largest manufacturers of composite materials in CIS region.
           </p>
 
-          <h3>History in Words</h3>
           <p>
-            We partner with over 320 amazing seds projects worldwide.There
-            anyone who loves or desires to obtain pain of it is because seds all
-            occasionally circumstances.
+            BASALT UZBEKISTAN carries out a full production cycle, starting with the extraction of basalt rocks in Forish district of Jizzakh region and ending with the supply of various finished products worldwide. Our enterprises use innovative cutting-edge technology developed within the company as well as brought from EU. 
           </p>
-          <button>Read More</button>
+          <button onClick={()=>navigate("/about-us")}>Read More</button>
         </div>
 
         <img src={welcomePic} loading="lazy" alt="" data-aos="fade-left" data-aos-duration="2000"/>

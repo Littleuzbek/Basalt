@@ -113,7 +113,7 @@ export default function RootLayout() {
               <NavLink to="/solutions">Solutions</NavLink>
               <div className="navigation-drop">
                 <Link
-                  to="/"
+                  to="/solutions/production-of-basalt-continuous-fiber"
                   onClick={() => navigationHandler()}
                 >
                   production of Basalt continuous fiber
@@ -130,19 +130,19 @@ export default function RootLayout() {
                   production of BRP continuous pipes
                 </Link>
                 <Link
-                  to="/solutions/complex-for-the-production-of-basalt-continuous-chopped-strand"
+                  to="/"
                   onClick={() => navigationHandler()}
                 >
                   production of Basalt continuous chopped strand
                 </Link>
                 <Link
-                  to="/solutions/complex-for-the-production-of-basalt-reinforcement-bars"
+                  to="/"
                   onClick={() => navigationHandler()}
                 >
                   production of Basalt reinforcement bars
                 </Link>
                 <Link
-                  to="/solutions/complex-for-the-production-of-basalt-geogrids-and-facade-mesh"
+                  to="/"
                   onClick={() => navigationHandler()}
                 >
                   production of Basalt geogrids and facade mesh
@@ -255,7 +255,7 @@ export default function RootLayout() {
             <li>
               <NavLink to="/solutions">Solutions</NavLink>
               <div className="navigation-drop">
-                <Link to="/">
+                <Link to="/solutions/production-of-basalt-continuous-fiber">
                   production of Basalt continuous fiber
                 </Link>
                 <Link to="/">

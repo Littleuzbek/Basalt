@@ -45,6 +45,7 @@ export default function AboutProduct() {
             <h1>{product?.adv?.list?.title}</h1>
 
             <div className="list" key={product?.adv?.list?.title}>
+              <p>{product?.adv?.list?.p}</p>
               {product?.adv?.list?.listTitle?.map((title, index) => (
                 <Fragment key={title + index}>
                   <h3>{title}</h3>
@@ -128,6 +129,7 @@ export const productLoader = async ({ params }) => {
     "basalt-wool": () => import("../assets/product-data").then(m => m.basalt_wool),
     "basfiber-trade": () => import("../assets/product-data").then(m => m.basalt_trade),
     "qoraqalpoq-basalt-wool": () => import("../assets/product-data").then(m => m.basalt_qqwool),
+    "production-of-basalt-continuous-fiber": () => import("../assets/product-data").then(m => m.solFiber)
   };
 
   if (routes[id]) {

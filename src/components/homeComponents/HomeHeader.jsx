@@ -65,7 +65,7 @@ export default function HomeHeader() {
                             Solutions
                         </NavLink>
                         <div className="home-navigation-drop">
-                            <Link to="/">production of Basalt continuous fiber</Link>
+                            <Link to="/solutions/production-of-basalt-continuous-fiber">production of Basalt continuous fiber</Link>
                             <Link to="/">production of Basalt rockwool</Link>
                             <Link to="/">production of BRP continuous pipes</Link>
                             <Link to="/">production of Basalt continuous chopped strand</Link>
