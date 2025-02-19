@@ -264,13 +264,13 @@ export default function RootLayout() {
                 <Link to="/">
                   production of BRP continuous pipes
                 </Link>
-                <Link to="/solutions/complex-for-the-production-of-basalt-continuous-chopped-strand">
+                <Link to="/">
                   production of Basalt continuous chopped strand
                 </Link>
-                <Link to="/solutions/complex-for-the-production-of-basalt-reinforcement-bars">
+                <Link to="/">
                   production of Basalt reinforcement bars
                 </Link>
-                <Link to="/solutions/complex-for-the-production-of-basalt-geogrids-and-facade-mesh">
+                <Link to="/">
                   production of Basalt geogrids and facade mesh
                 </Link>
               </div>

@@ -374,7 +374,11 @@
     /* cursor: pointer; */
 }
 
-.news-item > img {
+.news-item:nth-child(1) {
+    height: fit-content;
+}
+
+.news-item > video {
     width: 100%;
 }
 
@@ -413,7 +417,7 @@
 }
 
 .news-item:nth-child(2) > div{
-    height: 50%;
+    height: 310px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

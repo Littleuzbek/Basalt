@@ -1,5 +1,8 @@
 import { FaComments, FaUser, FaRegCalendarAlt } from "react-icons/fa";
 import { useLocation } from "react-router";
+import news1 from "../../assets/Latestnews/news1.jpg";
+import news2 from "../../assets/Latestnews/news2.jpg";
+import news3 from "../../assets/Latestnews/news3.mp4";
 
 export default function HomeNews() {
   const location = useLocation();
@@ -16,17 +19,22 @@ export default function HomeNews() {
       </>}
       <div className="news">
         <div className="news-item" data-aos="fade-right" data-aos-duration="2000">
-          <img
-            src="https://sanat.expert-themes.com/wp-content/uploads/2020/10/2-2-850x400-1-570x270.jpg"
+          <video
+            src={news3}
+            controls
+            preload="metadata"
             alt=""
-            loading="lazy"
           />
           <div>
-            <h4>What Planning Process Needs?</h4>
+            <h4>Basalt Rebar</h4>
             <p>
-              The increasing availability of productivity how all this mistaken
-              idea of denouncing pleasure and praising pain was born and I will
-              give you a ...
+              Basalt rebar is an innovative building material used in various fields of construction.
+              This material is made from natural basalt raw materials and has a number of unique advantages:
+              - Corrosion resistance;
+              - Resistance to high temperatures and chemicals;
+              - Lightness and high strength;
+              - Environmental safety;
+              - Affordable price.
             </p>
             <span className="reactions">
               <div>
@@ -44,11 +52,12 @@ export default function HomeNews() {
 
         <div className="news-item" data-aos="fade-left" data-aos-duration="2000">
           <div className="">
-            <img src="https://sanat.expert-themes.com/wp-content/uploads/2020/10/news-3-1-231x235.jpg" loading="lazy" alt="" />
+            <img src={news1} loading="lazy" alt="" />
             <div>
-              <h4>Don’t worry about creativity.</h4>
+              <h4>Uzbekistan - Pakistan</h4>
               <p>
-                The increasing availability of productivity how all this mistaken idea of denouncing pleasure and praising pain was born and I ...
+                On February 11, a historic event took place in Lahore - the first "Made in Uzbekistan" national products exhibition began! 🇺🇿 🇵🇰 and the "Basalt Uzbekistan" group of companies participated in it.
+                A major achievement for our company within the framework of the exhibition - a memorandum was signed with the large Pakistani company "Izhar Group of Companies" on the supply of basalt reinforcement! 
               </p>
               <span className="reactions">
                 <div>
@@ -64,11 +73,17 @@ export default function HomeNews() {
             </div>
           </div>
           <div>
-            <img src="https://sanat.expert-themes.com/wp-content/uploads/2020/10/1-2-850x400-1-231x235.jpg" loading="lazy" alt="" />
+            <img src={news2} loading="lazy" alt="" />
             <div>
-              <h4>Construction Of the Building’s Roof</h4>
+              <h4>Our basalt fiber and composite materials are mainly used in the following areas:</h4>
               <p>
-                The increasing availability of productivity how all this mistaken idea of denouncing pleasure and praising pain was born and I ...
+                🏗️ Construction and industry
+                🛣️ Road and bridge construction
+                🚗 Automotive
+                🚢 Shipbuilding
+                🛸 Aerospace
+                ⚡ Energy
+                The high strength, long service life and environmental friendliness of our products are important for modern projects. We are ready to discuss your needs and offer the optimal solution!
               </p>
               <span className="reactions">
                 <div>
