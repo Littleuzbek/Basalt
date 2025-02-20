@@ -6,6 +6,7 @@ import Slider from "react-slick";
   import { GrFormPrevious } from "react-icons/gr";
 import { useRef } from "react";
 import { useNavigate } from "react-router";
+import fiber from "../../assets/basaltGoldfiber/GOLDFIBER-10.jpg"
 
 export default function SolutionSlider() {
   const navigate = useNavigate();
@@ -62,7 +63,7 @@ export default function SolutionSlider() {
             <div className="project-cardd solution-slider-card">
               <img
                 loading="lazy"
-                src="https://steifmachine.ru/wp-content/uploads/2020/09/formovochnaya-mashina-zhbi-steif-lfb-mf-6.jpg"
+                src={fiber}
                 alt=""
                 />
               <div>
