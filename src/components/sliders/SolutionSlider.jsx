@@ -6,7 +6,7 @@ import Slider from "react-slick";
   import { GrFormPrevious } from "react-icons/gr";
 import { useRef } from "react";
 import { useNavigate } from "react-router";
-import fiber from "../../assets/basaltGoldfiber/GOLDFIBER-10.jpg"
+import fiber from "../../assets/basaltGoldfiber/GOLDFIBER-2.jpg"
 
 export default function SolutionSlider() {
   const navigate = useNavigate();
