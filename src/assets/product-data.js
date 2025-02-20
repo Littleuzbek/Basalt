@@ -689,7 +689,14 @@ export const basalt_quarry = {
 
 
 export const solFiber = {
-    images: [quarry7, quarry2, quarry3, quarry5, quarry6, quarry1],
+    images: [ 
+                goldfiber2, 
+                goldfiber3,
+                goldfiber4,
+                goldfiber5,
+                goldfiber6,
+                goldfiber10,
+            ],
     general: {
         title: "Production of Basalt continuous fiber",
         p: null,

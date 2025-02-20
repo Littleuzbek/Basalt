@@ -5,9 +5,6 @@ import end4 from "../../assets/endProducts/end4.jpg"
 import end5 from "../../assets/endProducts/end5.jpg"
 import end6 from "../../assets/endProducts/end6.jpg"
 import end7 from "../../assets/endProducts/end7.jpg"
-import end8 from "../../assets/endProducts/end8.jpg"
-import end9 from "../../assets/endProducts/end9.jpg"
-import end10 from "../../assets/endProducts/end10.jpg"
 import { GrFormPrevious } from "react-icons/gr";
 import { useRef, useState } from "react"
 
@@ -15,13 +12,11 @@ export default function EndProductSlider() {
   const slidesRef = useRef(null);
   const [startX, setStartX] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
-  const [scrollLeft, setScrollLeft] = useState(0);
-  const images = [end1, end2, end3, end4, end5, end6, end7, end8, end9, end10];
+  const images = [end1, end2, end3, end4, end5, end6, end7];
  
   const handleMouseDown = (e) => {
     setIsDragging(true);
     setStartX(e.pageX - slidesRef.current.offsetLeft);
-    setScrollLeft(slidesRef.current.scrollLeft);
   };
 
   const handleMouseMove = (e) => {

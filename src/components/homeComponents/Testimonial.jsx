@@ -19,9 +19,8 @@ export default function Testimonial() {
     <div className="testimonial-contatiner">
       <div>
       <div className="testimonial" data-aos="fade-right" data-aos-duration="2000">
-          <h2>SOLUTIONS <br /> END PRODUCTS</h2>
+          <h2> END PRODUCTS</h2>
           <span></span>
-
           <EndProductSlider />
         </div>
 
