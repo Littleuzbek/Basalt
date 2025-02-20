@@ -121,3 +121,25 @@
 .list > ul > li {
     line-height: 1.7;
 }
+
+.list > ol > li {
+    padding: 10px 0;
+}
+
+.list > ol > li:nth-child(1) {
+    padding: 0 0 10px;
+}
+
+.list > ol > li::marker {
+    font-weight: 600;
+}
+
+.list > ol > li > h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 0 10px;
+}
+
+.list > ol > li > ul {
+    list-style: disc;
+}

@@ -66,11 +66,11 @@ export default function HomeHeader() {
                         </NavLink>
                         <div className="home-navigation-drop">
                             <Link to="/solutions/production-of-basalt-continuous-fiber">production of Basalt continuous fiber</Link>
-                            <Link to="/">production of Basalt rockwool</Link>
-                            <Link to="/">production of BRP continuous pipes</Link>
-                            <Link to="/">production of Basalt continuous chopped strand</Link>
-                            <Link to="/">production of Basalt reinforcement bars</Link>
-                            <Link to="/">production of Basalt geogrids and facade mesh</Link>
+                            <Link to="/solutions/production-of-basalt-continuous-rockwool">production of Basalt rockwool</Link>
+                            <Link to="/solutions/production-of-basalt-continuous-pipes">production of BRP continuous pipes</Link>
+                            <Link to="/solutions/production-of-basalt-continuous-chopped-strand">production of Basalt continuous chopped strand</Link>
+                            <Link to="/solutions/production-of-basalt-continuous-reinforcement-bars">production of Basalt reinforcement bars</Link>
+                            <Link to="/solutions/production-of-basalt-continuous-geogrids">production of Basalt geogrids and facade mesh</Link>
                         </div>
                     </li>
                     <li>

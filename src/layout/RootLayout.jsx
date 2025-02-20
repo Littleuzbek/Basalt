@@ -119,30 +119,30 @@ export default function RootLayout() {
                   production of Basalt continuous fiber
                 </Link>
                 <Link 
-                  to="/"
+                  to="/solutions/production-of-basalt-continuous-rockwool"
                   onClick={()=>navigationHandler()}
                 >
                     production of Basalt rockwool</Link>
                 <Link
-                  to="/"
+                  to="/solutions/production-of-basalt-continuous-pipes"
                   onClick={() => navigationHandler()}
                 >
                   production of BRP continuous pipes
                 </Link>
                 <Link
-                  to="/"
+                  to="/solutions/production-of-basalt-continuous-chopped-strand"
                   onClick={() => navigationHandler()}
                 >
                   production of Basalt continuous chopped strand
                 </Link>
                 <Link
-                  to="/"
+                  to="/solutions/production-of-basalt-continuous-reinforcement-bars"
                   onClick={() => navigationHandler()}
                 >
                   production of Basalt reinforcement bars
                 </Link>
                 <Link
-                  to="/"
+                  to="/solutions/production-of-basalt-continuous-geogrids"
                   onClick={() => navigationHandler()}
                 >
                   production of Basalt geogrids and facade mesh
@@ -258,19 +258,19 @@ export default function RootLayout() {
                 <Link to="/solutions/production-of-basalt-continuous-fiber">
                   production of Basalt continuous fiber
                 </Link>
-                <Link to="/">
+                <Link to="/solutions/production-of-basalt-continuous-rockwool">
                   production of Basalt rockwool
                 </Link>
-                <Link to="/">
+                <Link to="/solutions/production-of-basalt-continuous-pipes">
                   production of BRP continuous pipes
                 </Link>
-                <Link to="/">
+                <Link to="/solutions/production-of-basalt-continuous-chopped-strand">
                   production of Basalt continuous chopped strand
                 </Link>
-                <Link to="/">
+                <Link to="/solutions/production-of-basalt-continuous-reinforcement-bars">
                   production of Basalt reinforcement bars
                 </Link>
-                <Link to="/">
+                <Link to="/solutions/production-of-basalt-continuous-geogrids">
                   production of Basalt geogrids and facade mesh
                 </Link>
               </div>

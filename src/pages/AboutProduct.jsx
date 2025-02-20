@@ -6,6 +6,7 @@ import { Fragment, useState } from "react"
 export default function AboutProduct() {
   const [type, setType] = useState(1);
   const product = useLoaderData();
+  console.log(product);
 
   return (
     <div className="about-product-page">
@@ -46,67 +47,91 @@ export default function AboutProduct() {
 
             <div className="list" key={product?.adv?.list?.title}>
               <p>{product?.adv?.list?.p}</p>
-              {product?.adv?.list?.listTitle?.map((title, index) => (
+              {product?.adv?.list?.ulListTitle?.map((title, index) => (
                 <Fragment key={title + index}>
                   <h3>{title}</h3>
                   <ul>
-                    {product?.adv?.list?.listItem?.[index]?.map((item) => (
+                    {product?.adv?.list?.ulListItem?.[index]?.map((item) => (
                       <li key={item + index}>{item}</li>
                     ))}
                   </ul>
                 </Fragment>
               ))}
 
-              {product?.adv?.list?.listTitle === null && (
+              {product?.adv?.list?.ulListTitle === null && (
                 <>
-                  <p>{product?.adv?.list?.p}</p>
                   <ul>
-                    {product?.adv?.list?.listItem?.map((item, index) => (
+                    {product?.adv?.list?.ulListItem?.map((item, index) => (
                       <li key={item + index}>{item}</li>
-                      ))}
+                    ))}
                   </ul>
                 </>
               )}
             </div>
 
-            <h1>{product?.adv?.list?.title2}</h1>
+            {product?.adv?.list?.title2 && <h1>{product?.adv?.list?.title2}</h1>}
 
-            <div className="list" key={product?.adv?.list?.title2}>
-              {product?.adv?.list?.listTitle2?.map((title, index) => (
+            {product?.adv?.list?.title2 && <div className="list" key={product?.adv?.list?.title2} >
+              {product?.adv?.list?.ulListTitle2?.map((title, index) => (
                 <Fragment key={title + index}>
                   <h3 key={title + index}>{title}</h3>
                   <ul>
-                    {product?.adv?.list?.listItem2?.[index]?.map((item) => (
+                    {product?.adv?.list?.ulListItem2?.[index]?.map((item) => (
                       <li key={item + index}>{item}</li>
                     ))}
                   </ul>
                 </Fragment>
               ))}
 
-              {product?.adv?.list?.listTitle2 === null && (
+              {product?.adv?.list?.ulListTitle2 === null && (
+                <>
+                  <p>{product?.adv?.list?.p2}</p>
+                  <ul>
+                    {product?.adv?.list?.ulListItem2?.map((item, index) => (
+                      <li key={item + index}>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>}
+
+            {product?.adv?.list?.olListTitle && <div className="list" key={product?.adv?.list?.title}>
+                <Fragment>
+                  <ol>
+                    {product?.adv?.list?.olListTitle?.map((title, index) => (
+                      <li key={title + index}>
+                        <h3>{title}</h3>
+                        <ul>
+                          {product?.adv?.list?.olListItem?.[index]?.map((item) => (
+                            <li>{item}</li>
+                          ))}
+                        </ul>
+                      </li>
+                    ))}
+                  </ol>
+                </Fragment>
+
+              {/* {product?.adv?.list?.listTitle2 === null && (
                 <>
                   <p>{product?.adv?.list?.p2}</p>
                   <ul>
                     {product?.adv?.list?.listItem2?.map((item, index) => (
                       <li key={item + index}>{item}</li>
-                      ))}
+                    ))}
                   </ul>
                 </>
-              )}
-            </div>
-
+              )} */}
+            </div>}
           </div>
         )}
 
         {type === 2 && (
           <div className="full-info">
-            {
-              product?.videos?.map((vid, index) => (
-                <video controls key={"vid" + index}>
-                  <source src={vid} type="video/mp4"/>
-                </video>
-              ))
-            }
+            {product?.videos?.map((vid, index) => (
+              <video controls key={"vid" + index}>
+                <source src={vid} type="video/mp4" />
+              </video>
+            ))}
             <h3>Video2</h3>
             <h3>Video3</h3>
             <h3>Video4</h3>
@@ -129,8 +154,13 @@ export const productLoader = async ({ params }) => {
     "basalt-wool": () => import("../assets/product-data").then(m => m.basalt_wool),
     "basfiber-trade": () => import("../assets/product-data").then(m => m.basalt_trade),
     "qoraqalpoq-basalt-wool": () => import("../assets/product-data").then(m => m.basalt_qqwool),
-    "production-of-basalt-continuous-fiber": () => import("../assets/product-data").then(m => m.solFiber)
-  };
+    "production-of-basalt-continuous-fiber": () => import("../assets/product-data").then(m => m.solFiber),
+    "production-of-basalt-continuous-rockwool": () => import("../assets/product-data").then(m => m.solRockwool),
+    "production-of-basalt-continuous-pipes": () => import("../assets/product-data").then(m => m.solPipes),
+    "production-of-basalt-continuous-chopped-strand": () => import("../assets/product-data").then(m => m.solStrand),
+    "production-of-basalt-continuous-reinforcement-bars": () => import("../assets/product-data").then(m => m.solBars),
+    "production-of-basalt-continuous-geogrids": () => import("../assets/product-data").then(m => m.solGeogrid),
+  }
 
   if (routes[id]) {
     return routes[id]();

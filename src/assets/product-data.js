@@ -193,8 +193,8 @@ export const basalt_ecobasalt = {
     adv: {
         list: {
             title: "APPLICATION FIELD OF BRP CONTINUOUS PIPES",
-            listTitle: null,
-            listItem:  [
+            ulListTitle: null,
+            ulListItem:  [
                 "Pipelines of drinking water supply systems;", 
                 "Pressure and non-pressure systems of household and industrial sewerage;", 
                 "Pipeline systems for irrigation and melioration;", 
@@ -226,8 +226,8 @@ export const basalt_geobasalt = {
     adv: {
         list: {
             title: "APPLICATIONS OF BASALT GEOGRIDS AND FACADE MESH",
-            listTitle: null,
-            listItem:  [
+            ulListTitle: null,
+            ulListItem:  [
                 "Basalt geogrid for asphalt concrete – serves for reliable reinforcement of asphalt concrete, distribution of mechanical loads and prevention of deformations;", 
                 "Basalt mesh for soil stabilization – indispensable in the construction of roads and railways, pipelines and structures on loose soils, strengthening and stabilizing slopes, embankments and coastlines;", 
                 "Basalt facade mesh for reinforcing the plaster layer in construction;", 
@@ -254,14 +254,14 @@ export const basalt_fiber = {
     adv: {
         list: {
             title: "APPLICATIONS OF BASALT CONTINUOUS FIBER AND BASALT MADE COMPOSITE MATERIALS",
-            listTitle: [
+            ulListTitle: [
                 "Core Construction:", 
                 "Engineering Networks:", 
                 "Agriculture:", 
                 "Machine Construction:", 
                 "Environmental Safety"
             ],
-            listItem:  [
+            ulListItem:  [
                 [
                     "Reinforcement of bridges, tunnels.", 
                     "Production of sandwich-panels based on basalt and carbon-basalt fibers.", 
@@ -422,9 +422,9 @@ export const basalt_goldfiber = {
     adv: {
         list: {
             title: "APPLICATION FIELD OF BASALT CHOPPED STRAND (basalt chopped fiber)",
-            listTitle: null,
+            ulListTitle: null,
             p: "Basalt chopped fiber mixed with cement concrete and mortar have stable volume, good workability, good durability, excellent reinforcing and toughening, anti-seepage and anti-cracking, anti-impact and prolonging the service life of buildings. They can be widely used in the field of ",
-            listItem:  [
+            ulListItem:  [
                 "national defense and transportation engineering infrastructure;", 
                 "Petrochemical industry;", 
                 "Fire protection;", 
@@ -457,9 +457,9 @@ export const basalt_wool = {
     adv: {
         list: {
             title: "APPLICATION FIELD OF BASALT ROCKWOOL",
-            listTitle: null,
+            ulListTitle: null,
             p: null,
-            listItem:  [
+            ulListItem:  [
                 "BASALT STONE WOOL FOR WALL THERMAL INSULATION - Insulation of the walls of residential buildings is designed to reduce heat loss, which directly affects the cost of heating and air conditioning in the premises. Through the enclosing structures thermal insulation there is a loss of up to 80% of heat. At the same time, for the year losses up to 150 kWh are possible after 1 sq. m walls. Simple and the most efficient solution to this problem is external insulation;", 
                 "BASALT STONE WOOL FOR ROOF THERMAL INSULATION - Insulation of the roof of residential buildings and industrial facilities can significantly reduce heat loss, eliminate the accumulation of moisture inside the layers of roofing materials, which ultimately leads to an increase in the service life of the roof. According to independent experts, heat loss through the roof can reach from 20 to 40%. High-quality thermal insulation roofs will reduce the cost of space heating in winter period and air conditioning in summer;", 
                 "BASALT STONE WOOL FOR FLOOR THERMAL INSULATION - Floor insulation is used for efficient heat and sound insulation of ceilings along the joists, reinforced concrete floors with a screed, floors on the ground, floating with a screed. It is used as unloaded heat and sound insulation of interfloor and attic ceilings, as well as floors with insulation between the lags;", 
@@ -526,7 +526,7 @@ export const basalt_trade = {
     adv: {
         list: {
             title: "APPLICATION FIELD OF BASALT TWISTED YARN",
-            listTitle: [
+            ulListTitle: [
                     "For weaving all kinds of:", 
                     "Construction industry: ",
                     "Manufacturing industry: ",
@@ -537,7 +537,7 @@ export const basalt_trade = {
                     "Other fields: "
                 ],
             p: "Basalt twisted yarn is a yarn made by twisting and doubling one or more basalt fiber monofilament, the diameter of the monofilament is generally ≤ 16 um. Twisted yarn can be made of two, three, four, or more plies, or may be used as singles without twisting. Single and plied yarns are used selectively according to purpose. Basalt twisted yarn can generally be divided into weaving yarns and other industrial yarns. Weaving yarn is mainly made of tube yarn and bottle shaped tube yarn.",
-            listItem:  [
+            ulListItem:  [
                 [
                     "Plain;", 
                     "Twill;", 
@@ -586,8 +586,8 @@ export const basalt_trade = {
             ],
             title2: "APPLICATION FIELD OF BASALT FABRIC",
             p2: "For structural uses, basalt fabrics are useful for producing structural basalt-plastics based on various thermosetting binders (for instance by laying out method). From these materials components’ automobiles, aircraft, ships and households’ appliances can be produced. In the case of preliminary metallization of the fabrics, the resulting basalt-plastic acquires shield properties against electromagnetic radiation. Also, basalt fabrics can be used as basics when producing soft and rigid roofing. Basalt fabrics for electro technical purposes are used as a base for the production of insulation materials. These materials are employed in the production of substances for printed circuit boards for electronics and electrical engineering. These have superior properties to similar conventional components made of fiberglass. General-purpose fabrics are useful, for example in fire feltings for suppression of extremely complex fires resulting from ignition of highly flammable liquids, in particular gasoline. The employments of incombustible basalt fabric insert in industrial ventilators increase their fire safety as well as the fire resistance of ventilating systems. The cost of basalt fabrics is considerably lower than that of similar materials. The non-combustible properties of basalt woven materials enable it to resist flames for long periods that make basalt tapes effective as an extra fine resistant insulation for electrical cables and underground ducts. Basalt-fabrics hoses may be useful for reinforcing cables, repairing the interior and exterior of tubes and pipelines. Most fabrics are made by weaving or knitting yarns together. Non-woven fabrics are made by bonding or felting fibers together. A fabric's appearance, properties and end-use can be affected by the way it was constructed. ",
-            listTitle2: ["Application:"],
-            listItem2: [
+            ulListTitle2: ["Application:"],
+            ulListItem2: [
                 [
                     "Pultrusion;",
                     "Prepregs;",
@@ -645,9 +645,9 @@ export const basalt_qqwool = {
     adv: {
         list: {
             title: "APPLICATION FIELD OF BASALT INSULATION PRODUCTS  ROCKWOOL",
-            listTitle: null,
+            ulListTitle: null,
             p: null,
-            listItem:  [
+            ulListItem:  [
                 "CONSTRUCTION: Basalt wool is widely used in construction for thermal insulation of roofs, walls, floors, foundations, and ventilated facades. It is also used as sound insulation in walls and ceilings;", 
                 "INDUSTRY: Basalt wool is used in the industry for thermal insulation of pipelines, boilers, steam generators, furnaces, and other equipment. It can also be used for sound insulation in industrial premises:", 
                 "AUTOMOTIVE industry: Basalt wool is used for thermal insulation of car engines, brake systems, and exhaust systems. It can also be used for sound insulation of the car cabin;", 
@@ -671,9 +671,9 @@ export const basalt_quarry = {
     adv: {
         list: {
             title: "basalt quarry",
-            listTitle: ["Advantages of basalt-quarry:"], 
+            ulListTitle: ["Advantages of basalt-quarry:"], 
             p: null,
-            listItem:  [
+            ulListItem:  [
                 [
                     "Lorem ipsum dolor sit amet;", 
                     "Lorem, ipsum dolor;", 
@@ -704,13 +704,22 @@ export const solFiber = {
     adv: {
         list: {
             title: "TECHNOLOGICAL COMPLEX FOR THE PRODUCTION OF BASALT CONTINUOUS FIBER",
-            listTitle: ["Technological furnace equipment:", 
+            olListTitle: ["Technological furnace equipment:", 
                         "Gas-Exhaust-Air systems (GEAS):",
                         "Complete plant automation system (PMS):",
-                        "Yet continious:"
+                        "Monorail Loader system (MLS)",
+                        "Furnace loader system (FLS)",
+                        "Sizing Distribution System (SDS)",
+                        "Chemical reactor (CHR)",
+                        "Raw materials handling system (RMHS)",
+                        "Waste Water Treatment and Supply (WWTS)",
+                        "Compressed air system (CAS)",
+                        "Water Cooling Systems (WCS)",
+                        "Product drier system",
+                        "Laboratory complex (LAB)"
                        ], 
             p: "The production complex contains different components that form units jointly working as one system. Each unit has its own designation and role in the production process. Here is brief description of the units:",
-            listItem:  [
+            olListItem:  [
                 [
                     "Furnace refractory materials;", 
                     "Furnace lining and isolation;", 
@@ -732,7 +741,205 @@ export const solFiber = {
                     "Frequency converters;", 
                     "Cables in assortment."
                 ],
-                ["Continious..."]
+            ]
+        } 
+    }
+}
+
+export const solRockwool = {
+    images: [ 
+                goldfiber2, 
+                goldfiber3,
+                goldfiber4,
+                goldfiber5,
+                goldfiber6,
+                goldfiber10,
+            ],
+    general: {
+        title: "Production of Basalt rockwool",
+        p: null,
+    },
+    adv: {
+        list: {
+            title: "TECHNOLOGICAL COMPLEX FOR THE PRODUCTION OF BASALT CONTINUOUS ROCKWOOL",
+            ulListTitle: null, 
+            p: "BASALT ENGINEERING CORP provides wide range services for the production of basalt rockwool and other insulation products. For such projects, we provide key solutions such us:",
+            ulListItem:  [
+                    "Supporting materials;", 
+                    "Samples;", 
+                    "Feasibility study;", 
+                    "Pre-sales support of finished products to form the client’s market;",
+                    "Identification of end product’s designation;",
+                    "Contracting support with verified suppliers;",
+                    "Post commissioning services;",
+                    "Product quality optimization;",
+                    "Other services (TBA).",
+            ]
+        } 
+    }
+}
+
+export const solPipes = {
+    images: [ 
+                goldfiber2, 
+                goldfiber3,
+                goldfiber4,
+                goldfiber5,
+                goldfiber6,
+                goldfiber10,
+            ],
+    general: {
+        title: "Production of Basalt continuous pipes",
+        p: null,
+    },
+    adv: {
+        list: {
+            title: "TECHNOLOGICAL COMPLEX FOR THE PRODUCTION OF BASALT CONTINUOUS PIPES",
+            ulListTitle: null, 
+            p: "For such projects, we provide key solutions such us:",
+            ulListItem:  [
+                    "Supporting materials;", 
+                    "Samples;", 
+                    "Feasibility study;", 
+                    "Pre-sales support of finished products to form the client’s market;",
+                    "Identification of end product’s designation;",
+                    "Contracting support with verified suppliers;",
+                    "Post commissioning services;",
+                    "Product quality optimization;",
+                    "Other services (TBA).",
+            ]
+        } 
+    }
+}
+
+export const solStrand = {
+    images: [ 
+                goldfiber2, 
+                goldfiber3,
+                goldfiber4,
+                goldfiber5,
+                goldfiber6,
+                goldfiber10,
+            ],
+    general: {
+        title: "Production of Basalt continuous chopped strand",
+        p: null,
+    },
+    adv: {
+        list: {
+            title: "TECHNOLOGICAL COMPLEX FOR THE PRODUCTION OF BASALT CONTINUOUS CHOPPED STRAND",
+            ulListTitle: null, 
+            p: "For such projects, we provide key solutions such us:",
+            ulListItem:  [
+                    "Supporting materials;", 
+                    "Samples;", 
+                    "Feasibility study;", 
+                    "Pre-sales support of finished products to form the client’s market;",
+                    "Identification of end product’s designation;",
+                    "Contracting support with verified suppliers;",
+                    "Post commissioning services;",
+                    "Product quality optimization;",
+                    "Other services (TBA).",
+            ]
+        } 
+    }
+}
+
+export const solBars = {
+    images: [ 
+                goldfiber2, 
+                goldfiber3,
+                goldfiber4,
+                goldfiber5,
+                goldfiber6,
+                goldfiber10,
+            ],
+    general: {
+        title: "Production of Basalt reinforcement bars",
+        p: null,
+    },
+    adv: {
+        list: {
+            title: "TECHNOLOGICAL COMPLEX FOR THE PRODUCTION OF BASALT REINFORCEMENT BARS",
+            ulListTitle: null, 
+            p: "For such projects, we provide key solutions such us:",
+            ulListItem:  [
+                    "OEM, ODM & OBM services",
+                    "Supporting materials;", 
+                    "Samples;", 
+                    "Feasibility study;", 
+                    "Pre-sales support of finished products to form the client’s market;",
+                    "Identification of end product’s designation;",
+                    "Contracting support with verified suppliers;",
+                    "Post commissioning services;",
+                    "Product quality optimization;",
+                    "Other services (TBA).",
+            ]
+        } 
+    }
+}
+
+export const solGeogrid = {
+    images: [ 
+                goldfiber2, 
+                goldfiber3,
+                goldfiber4,
+                goldfiber5,
+                goldfiber6,
+                goldfiber10,
+            ],
+    general: {
+        title: "Production of Basalt geogrids and facade mesh",
+        p: null,
+    },
+    adv: {
+        list: {
+            title: "TECHNOLOGICAL COMPLEX FOR THE PRODUCTION OF BASALT GEOGRIDS AND FACADE MESH",
+            ulListTitle: null, 
+            p: "For such projects, we provide key solutions such us:",
+            ulListItem:  [
+                    "Supporting materials;", 
+                    "Samples;", 
+                    "Feasibility study;", 
+                    "Pre-sales support of finished products to form the client’s market;",
+                    "Identification of end product’s designation;",
+                    "Contracting support with verified suppliers;",
+                    "Post commissioning services;",
+                    "Product quality optimization;",
+                    "Other services (TBA).",
+            ]
+        } 
+    }
+}
+
+export const solFabric = {
+    images: [ 
+                goldfiber2, 
+                goldfiber3,
+                goldfiber4,
+                goldfiber5,
+                goldfiber6,
+                goldfiber10,
+            ],
+    general: {
+        title: "Production of Basalt fabric",
+        p: null,
+    },
+    adv: {
+        list: {
+            title: "TECHNOLOGICAL COMPLEX FOR THE PRODUCTION OF BASALT FABRIC AND TWISTED YARN",
+            ulListTitle: null, 
+            p: "For such projects, we provide key solutions such us:",
+            ulListItem:  [
+                    "Supporting materials;", 
+                    "Samples;", 
+                    "Feasibility study;", 
+                    "Pre-sales support of finished products to form the client’s market;",
+                    "Identification of end product’s designation;",
+                    "Contracting support with verified suppliers;",
+                    "Post commissioning services;",
+                    "Product quality optimization;",
+                    "Other services (TBA).",
             ]
         } 
     }
